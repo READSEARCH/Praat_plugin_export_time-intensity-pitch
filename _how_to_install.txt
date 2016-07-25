@@ -1,0 +1,4 @@
+Download all files in from this directory and save them on your computer.
+
+for MAC: create a folder called 'plugin_Sound_Data' in this location: User_Folder/Library/Preferences/Praat Prefs/
+The folder library can be invisible. If that is the case, open the menu 'Go' and press the alt-key. Then it appears.
