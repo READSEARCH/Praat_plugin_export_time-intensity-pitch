@@ -8,3 +8,7 @@ for WINDOWS: create a folder called 'plugin_Sound_Data' in this location: C:\Use
 for Linux: create a folder called 'plugin_Sound_Data' in this location: HOMEDIRECTORY/.praat-dir/ and put the files in there.
 
 All Praat info about Praat plugins can be found at http://www.fon.hum.uva.nl/praat/manual/plug-ins.html.
+
+
+After the restart of Praat, new menu items will be added to 'Goodies' and 'Preferences.' On Mac, these are hidden away behind the menu 'Praat.'
+The pitch contours can be changed in the code, currently there is not yet an user interface for that.
