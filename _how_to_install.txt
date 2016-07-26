@@ -1,4 +1,10 @@
 Download all files in from this directory and save them on your computer.
 
-for MAC: create a folder called 'plugin_Sound_Data' in this location: User_Folder/Library/Preferences/Praat Prefs/
+for MAC: create a folder called 'plugin_Sound_Data' in this location: USER_FOLDER/Library/Preferences/Praat Prefs/ and put the files in there.
 The folder library can be invisible. If that is the case, open the menu 'Go' and press the alt-key. Then it appears.
+
+for WINDOWS: create a folder called 'plugin_Sound_Data' in this location: C:\Users\USER_FOLDER\Praat\ and put the files in there.
+
+for Linux: create a folder called 'plugin_Sound_Data' in this location: HOMEDIRECTORY/.praat-dir/ and put the files in there.
+
+All Praat info about Praat plugins can be found at http://www.fon.hum.uva.nl/praat/manual/plug-ins.html.
