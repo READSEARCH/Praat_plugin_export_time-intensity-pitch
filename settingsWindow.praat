@@ -34,12 +34,12 @@ endif
 
 
 # Show the settings window.
-beginPause: "READSEARCH export sound data plugin settings"
+beginPause: "READSEARCH export sound data settings"
   sentence: "Output path", m_pitchAndIntensityOutputPath$
   boolean: "Use subdirectory per person", m_usePersonSubDir
   word: "Person separator", m_personSeparator$
   boolean: "Show debug output", m_showDebugOutput
-  boolean: "Combine output to single file", m_useAltAlgo
+  boolean: "Use alternative algorithm", m_useAltAlgo
 m_settingsClicked = endPause: "Cancel", "OK", 2, 1
 
 # Don't save anything if Cancel was clicked.

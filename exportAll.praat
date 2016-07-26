@@ -15,7 +15,7 @@ if n == 0
   # sound objects in the object list of the Objects window. So we'll show
   # an error message to the user.
   if n == 0
-    beginPause: "READSEARCH export sound data plugin Error"
+    beginPause: "WPP Error"
       comment: "ERROR: No sound objects available to export."
     endPause: "OK", 1, 1
   endif
@@ -35,7 +35,7 @@ if n > 0
     View & Edit
     editor: selectedSounds[i]
       # Export the pitch and intensity data of the selected sound object.
-      Export Microsoft Data
+      READSEARCH export sound data
       Close
     endeditor
   endfor
