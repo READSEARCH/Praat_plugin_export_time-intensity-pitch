@@ -41,10 +41,10 @@ beginPause: "READSEARCH export sound data settings"
   comment: "READSEARCH found values up to 650Hz when doing research in visual prosody."
   comment: ""
   sentence: "Output path", m_pitchAndIntensityOutputPath$
-  boolean: "Use subdirectory per person", m_usePersonSubDir
-  word: "Person separator", m_personSeparator$
+  boolean: "Group files in folders", m_usePersonSubDir
+  word: "Group by words before", m_personSeparator$
   boolean: "Show debug output", m_showDebugOutput
-  boolean: "Use alternative algorithm", m_useAltAlgo
+  boolean: "Combine output to one file", m_useAltAlgo
 m_settingsClicked = endPause: "Cancel", "OK", 2, 1
 
 # Don't save anything if Cancel was clicked.
@@ -58,19 +58,19 @@ if not endsWith(output_path$, "/") and not endsWith(output_path$, "\")
   output_path$ = output_path$ + "/"
 endif
 # The person separator can't be empty, use the previous one instead.
-if person_separator$ == ""
-  person_separator$ = m_personSeparator$
+if group_by_words_before$ == ""
+  group_by_words_before$ = m_group_by_words_before$
   if m_showDebugOutput == 1
-    appendInfoLine: "WARNING: Person separator can't be empty using previous one instead."
+    appendInfoLine: "WARNING: Group symbol can't be empty using previous one instead."
   endif
 endif
 
 # Save the settings (if OK was clicked).
 if m_settingsClicked == 2
   @saveString: "pitchAndIntensityOutputPath", output_path$
-  @saveNumber: "usePersonSubDir", use_subdirectory_per_person
-  @saveString: "personSeparator", person_separator$
+  @saveNumber: "usePersonSubDir", group_files_in_folders
+  @saveString: "personSeparator", group_by_words_before$
   @saveNumber: "showDebugOutput", show_debug_output
-  @saveNumber: "useAlternativeAlgorithm", use_alternative_algorithm
+  @saveNumber: "useAlternativeAlgorithm", combine_output_to_one_file
 endif
 
