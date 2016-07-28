@@ -35,6 +35,11 @@ endif
 
 # Show the settings window.
 beginPause: "READSEARCH export sound data settings"
+  comment: "There currently is no User Interface to set the pitch values,"
+  comment: "this can be done in the code."
+  comment: "The default values for the pitch contours are 75 to 500Hz."
+  comment: "READSEARCH found values up to 650Hz when doing research in visual prosody."
+  comment: ""
   sentence: "Output path", m_pitchAndIntensityOutputPath$
   boolean: "Use subdirectory per person", m_usePersonSubDir
   word: "Person separator", m_personSeparator$
